@@ -9,8 +9,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "company", schema = "works")
 public class Company {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "comp_id", nullable = false)
     private Long id;
 
